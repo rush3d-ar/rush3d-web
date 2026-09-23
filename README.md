@@ -52,5 +52,4 @@ npx wrangler deploy
 - El formulario de contacto usa [FormSubmit](https://formsubmit.co/) apuntando
   a `contacto.rush3d@gmail.com` (sin backend propio).
 - Ya tiene instalado Cloudflare Web Analytics (beacon en el `<script>` final).
-- Falta agregar: Google Search Console, Google Analytics (GA4), Microsoft
-  Clarity y Meta Pixel — ver tareas pendientes en la conversación con Iván.
+Google Analytics (GA4), Microsoft Clarity y Meta Pixel ya están instalados en `index.html` (GA4: G-XFLXBW8GWH, Clarity: yn0ithy1xb, Meta Pixel: 379032344154547). Google Search Console verificado para rush3d.ar (dominio).
