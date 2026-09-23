@@ -1,0 +1,6 @@
+name = "rush3d"
+compatibility_date = "2026-09-23"
+
+[assets]
+directory = "./"
+not_found_handling = "404-page"

@@ -1,0 +1,904 @@
+<html lang="es-AR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rush — Impresión 3D y diseño CAD en Buenos Aires</title>
+<meta name="description" content="Impresión 3D FDM y diseño CAD en Buenos Aires. Piezas a medida, repuestos, prototipos y series cortas. Materiales, tiempos y cómo cotizamos, explicado. Envíos a todo el país.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://rush3d.ar/">
+<meta name="msvalidate.01" content="8DD8300EDB866E9A3632C56B92EE031A">
+<meta name="theme-color" content="#0E1116">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XFLXBW8GWH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XFLXBW8GWH');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '379032344154547');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=379032344154547&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "yn0ithy1xb");
+</script>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Rush">
+<meta property="og:title" content="Rush — Impresión 3D y diseño CAD en Buenos Aires">
+<meta property="og:description" content="Impresión 3D FDM y diseño CAD en Buenos Aires. Piezas a medida, repuestos, prototipos y series cortas. Envíos a todo el país.">
+<meta property="og:url" content="https://rush3d.ar/">
+<meta property="og:image" content="https://rush3d.ar/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rush — Impresión 3D y diseño CAD en Buenos Aires">
+<meta name="twitter:description" content="Impresión 3D FDM y diseño CAD en Buenos Aires. Piezas a medida, repuestos, prototipos y series cortas. Envíos a todo el país.">
+<meta name="twitter:image" content="https://rush3d.ar/og-image.jpg">
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "Rush",
+"alternateName": "Rush 3D",
+"description": "Impresión 3D FDM y diseño CAD en Buenos Aires. Piezas a medida, repuestos, prototipos y series cortas.",
+"url": "https://rush3d.ar/",
+"image": "https://rush3d.ar/og-image.jpg",
+"telephone": "+5491164131331",
+"email": "contacto.rush3d@gmail.com",
+"priceRange": "$$",
+"address": {
+"@type": "PostalAddress",
+"addressLocality": "José León Suárez",
+"addressRegion": "Buenos Aires",
+"addressCountry": "AR"
+},
+"areaServed": {
+"@type": "Country",
+"name": "Argentina"
+},
+"sameAs": [
+"https://instagram.com/rush3d.ar"
+]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+color-scheme: light dark;
+--paper:#F1F2F4; --surface:#FFFFFF;
+--ink:#101318; --ink-soft:#575E69; --line:#D6D9DE;
+--accent:#D6110A; --accent-ink:#A80D07;
+--brand:#E5140C; --steel:#B9C0C8;
+--deep:#0E1116; --on-deep:#EDEFF2; --on-deep-soft:#9BA4B0; --deep-line:#262C34;
+box-sizing:border-box;
+padding-top: env(safe-area-inset-top, 0px);
+padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark){
+:root:not([data-theme="light"]){
+--paper:#0E1116; --surface:#161A20;
+--ink:#EDEFF2; --ink-soft:#98A1AD; --line:#262C34;
+--accent:#FF4A3D; --accent-ink:#FF6A5E;
+--deep:#05070A; --deep-line:#1C222A;
+}
+}
+:root[data-theme="dark"]{
+--paper:#0E1116; --surface:#161A20;
+--ink:#EDEFF2; --ink-soft:#98A1AD; --line:#262C34;
+--accent:#FF4A3D; --accent-ink:#FF6A5E;
+--deep:#05070A; --deep-line:#1C222A;
+}
+html{ scroll-padding-top: calc(72px + env(safe-area-inset-top, 0px)); scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+*,*::before,*::after{ box-sizing:inherit; }
+body{ margin:0; background:var(--paper); color:var(--ink);
+font-family:"Inter","Helvetica Neue",Arial,sans-serif; font-size:17px; line-height:1.6;
+-webkit-font-smoothing:antialiased; }
+a{ color:inherit; }
+:focus-visible{ outline:3px solid var(--accent); outline-offset:3px; border-radius:2px; }
+.wrap{ width:min(1120px, 100% - 3rem); margin-inline:auto; }
+@media (max-width:640px){ .wrap{ width:min(1120px, 100% - 2rem); } }
+h1,h2,h3{ font-family:"Bricolage Grotesque",Georgia,sans-serif; font-weight:800; letter-spacing:-0.02em; line-height:1.02; margin:0; }
+h2{ font-size:clamp(2rem, 5vw, 3.1rem); }
+h3{ font-size:1.18rem; font-weight:600; letter-spacing:-0.01em; line-height:1.25; }
+p{ margin:0 0 1rem; max-width:62ch; }
+
+header.bar{ position:sticky; top:env(safe-area-inset-top,0px); z-index:50;
+background:color-mix(in srgb, var(--paper) 88%, transparent);
+backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line); }
+.bar-in{ display:flex; align-items:center; justify-content:space-between; gap:1rem; height:72px; }
+.mark{ display:flex; align-items:center; gap:.7rem; text-decoration:none; }
+.mark .bolt{ display:block; height:34px; width:auto; }
+.mark .word{ display:block; width:112px; height:15px;
+background:currentColor;
+-webkit-mask:url(/images/logo-word-mask.png) no-repeat center/contain;
+mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
+nav.links{ display:flex; gap:1.5rem; font-size:.95rem; }
+nav.links a{ text-decoration:none; color:var(--ink-soft); padding-block:.4rem; }
+nav.links a:hover{ color:var(--ink); }
+@media (max-width:980px){ nav.links{ display:none; } }
+.btn{ display:inline-flex; align-items:center; gap:.55rem; background:var(--accent); color:#fff;
+text-decoration:none; font-weight:600; font-size:.95rem; padding:.72rem 1.15rem;
+border-radius:2px; border:1px solid transparent; }
+.btn:hover{ filter:brightness(1.08); }
+.btn.on-deep{ background:var(--brand); color:#fff; }
+.btn.ghost-deep{ background:transparent; color:var(--on-deep); border-color:var(--deep-line); }
+
+.hero{ background:var(--deep); color:var(--on-deep); border-bottom:1px solid var(--deep-line); }
+.hero-in{ display:grid; grid-template-columns:1.15fr .85fr; gap:3rem; align-items:center; padding:6rem 0 5rem; }
+@media (max-width:900px){ .hero-in{ grid-template-columns:1fr; gap:2.5rem; padding:3.5rem 0 3rem; } }
+.hero h1{ font-size:clamp(2.7rem, 7vw, 5rem); }
+.hero p.lead{ color:var(--on-deep-soft); font-size:clamp(1.05rem,2vw,1.22rem); margin-top:1.4rem; max-width:48ch; }
+.hero-actions{ display:flex; flex-wrap:wrap; gap:.75rem; margin-top:2rem; }
+.hero-facts{ display:flex; flex-wrap:wrap; gap:0 2rem; margin-top:2.6rem; padding-top:1.4rem;
+border-top:1px solid var(--deep-line); color:var(--on-deep-soft); font-size:.92rem; }
+.hero-facts span{ padding-block:.3rem; }
+
+.stats{ background:var(--surface); border-bottom:1px solid var(--line); }
+.stats-in{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; padding:2.4rem 0; }
+@media (max-width:640px){ .stats-in{ grid-template-columns:1fr; gap:1.6rem; padding:2rem 0; text-align:center; } }
+.stat b{ display:block; font-family:"Bricolage Grotesque", sans-serif; font-size:clamp(1.7rem,3.2vw,2.3rem);
+color:var(--ink); line-height:1.1; }
+.stat span{ display:block; margin-top:.3rem; color:var(--ink-soft); font-size:.92rem; }
+
+.stage{ position:relative; aspect-ratio:1/1; max-width:420px; margin-inline:auto; width:100%; }
+.plate{ position:absolute; left:0; right:0; bottom:14%; height:2px; background:var(--deep-line); }
+.plate::after{ content:""; position:absolute; inset:0 0 auto; height:1px;
+background:linear-gradient(to right, transparent, var(--brand), transparent); opacity:.8; }
+.piece,.piece-edge{ position:absolute; left:12%; right:12%; top:16%; bottom:14%;
+clip-path:polygon(22% 100%, 12% 62%, 20% 26%, 36% 4%, 64% 4%, 80% 26%, 88% 62%, 78% 100%); }
+.piece{ background:repeating-linear-gradient(to bottom, var(--brand) 0 3px, transparent 3px 6px); opacity:.95; }
+.piece-edge{ background:color-mix(in srgb, var(--steel) 20%, transparent); mix-blend-mode:screen; }
+.curtain{ position:absolute; left:0; right:0; top:0; height:0%; background:var(--deep); }
+.nozzle{ position:absolute; top:16%; left:50%; width:44px; height:26px; transform:translate(-50%,-100%); opacity:0; }
+.build .curtain{ height:86%; animation:lift 2.4s cubic-bezier(.4,0,.2,1) .35s forwards; }
+.build .nozzle{ animation:head 2.4s cubic-bezier(.4,0,.2,1) .35s forwards; }
+@keyframes lift{ to{ height:0%; } }
+@keyframes head{
+0%{ opacity:0; top:86%; left:30%; } 8%{ opacity:1; } 25%{ left:72%; }
+50%{ left:26%; } 75%{ left:70%; } 92%{ opacity:1; } 100%{ opacity:0; top:14%; left:50%; } }
+@media (prefers-reduced-motion: reduce){
+.build .curtain{ animation:none; height:0%; } .build .nozzle{ animation:none; opacity:0; } }
+
+section{ padding:5.5rem 0; border-bottom:1px solid var(--line); }
+@media (max-width:640px){ section{ padding:3.5rem 0; } }
+.sec-head{ max-width:58ch; margin-bottom:3rem; }
+.sec-head p{ color:var(--ink-soft); margin-top:1rem; }
+
+.rows{ border-top:1px solid var(--line); }
+.row{ display:grid; grid-template-columns:1.6rem 15rem 1fr; gap:1.5rem; align-items:start;
+padding:1.65rem 0; border-bottom:1px solid var(--line); }
+@media (max-width:780px){ .row{ grid-template-columns:1.6rem 1fr; gap:.35rem 1rem; } .row p{ grid-column:2; } }
+.row .glyph{ width:1.6rem; height:1.6rem; margin-top:.15rem; color:var(--accent-ink); }
+.row p{ margin:0; color:var(--ink-soft); }
+
+.insta{ background:var(--surface); }
+.insta-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; margin-top:2.2rem; }
+@media (max-width:860px){ .insta-grid{ grid-template-columns:1fr 1fr; } }
+@media (max-width:560px){ .insta-grid{ grid-template-columns:1fr; } }
+.insta-card{ display:block; background:var(--paper); border:1px solid var(--line); border-radius:2px;
+padding:1.3rem 1.4rem; text-decoration:none; color:inherit; transition:border-color .15s; }
+.insta-card:hover{ border-color:var(--brand); }
+.insta-card .ig-tag{ display:flex; align-items:center; gap:.4rem; color:var(--brand);
+font-size:.82rem; font-weight:600; text-transform:uppercase; letter-spacing:.02em; }
+.insta-card .ig-tag svg{ width:15px; height:15px; }
+.insta-card b{ display:block; margin-top:.7rem; font-family:"Bricolage Grotesque", sans-serif; font-size:1.08rem; }
+.insta-card p{ margin:.45rem 0 0; color:var(--ink-soft); font-size:.92rem; }
+.insta-cta{ margin-top:2rem; }
+
+.who{ background:var(--surface); }
+.who-grid{ display:grid; grid-template-columns:repeat(3,1fr); border-top:2px solid var(--ink); }
+@media (max-width:860px){ .who-grid{ grid-template-columns:1fr; } }
+.who-col{ padding:2rem 2rem 2.2rem 0; border-right:1px solid var(--line); }
+.who-col:last-child{ border-right:0; padding-right:0; }
+@media (max-width:860px){ .who-col{ border-right:0; border-bottom:1px solid var(--line); padding-right:0; }
+.who-col:last-child{ border-bottom:0; } }
+.who-col p{ color:var(--ink-soft); font-size:.97rem; margin:.7rem 0 0; }
+.who-col ul{ list-style:none; padding:0; margin:1.1rem 0 0; font-size:.95rem; }
+.who-col li{ padding:.45rem 0; border-top:1px solid var(--line); color:var(--ink-soft); }
+
+.steps{ counter-reset:step; display:grid; grid-template-columns:repeat(4,1fr); border-top:2px solid var(--ink); }
+@media (max-width:860px){ .steps{ grid-template-columns:1fr 1fr; } }
+@media (max-width:520px){ .steps{ grid-template-columns:1fr; } }
+.step{ padding:1.8rem 1.6rem 2rem 0; border-right:1px solid var(--line); }
+.step:last-child{ border-right:0; }
+@media (max-width:860px){ .step:nth-child(2){ border-right:0; } }
+@media (max-width:520px){ .step{ border-right:0; border-bottom:1px solid var(--line); padding-right:0; }
+.step:last-child{ border-bottom:0; } }
+.step::before{ counter-increment:step; content:counter(step,decimal-leading-zero); display:block;
+font-family:"Bricolage Grotesque",sans-serif; font-weight:800; font-size:1.05rem; color:var(--accent-ink); margin-bottom:.9rem; }
+.step p{ color:var(--ink-soft); font-size:.97rem; margin:.5rem 0 0; }
+.note{ margin-top:2.5rem; padding:1.4rem 1.6rem; background:var(--surface); border-left:3px solid var(--accent); }
+.note p{ margin:0; color:var(--ink-soft); }
+.note strong{ color:var(--ink); font-weight:600; }
+.who .note{ background:var(--paper); }
+
+.mats{ display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; }
+@media (max-width:860px){ .mats{ grid-template-columns:1fr; gap:2rem; } }
+.mat{ border-top:2px solid var(--accent); padding-top:1.4rem; }
+.mat h3{ font-size:1.6rem; font-weight:800; font-family:"Bricolage Grotesque",sans-serif; }
+.mat .sub{ color:var(--ink-soft); font-size:.92rem; margin:.3rem 0 1.1rem; }
+.mat dl{ margin:0; display:grid; grid-template-columns:9rem 1fr; }
+@media (max-width:420px){ .mat dl{ grid-template-columns:1fr; } }
+.mat dt{ padding:.7rem 1rem .7rem 0; border-top:1px solid var(--line); color:var(--ink-soft); font-size:.9rem; }
+.mat dd{ margin:0; padding:.7rem 0; border-top:1px solid var(--line); font-size:.95rem; }
+@media (max-width:420px){ .mat dd{ border-top:0; padding-top:.1rem; } .mat dt{ padding-bottom:0; } }
+
+.more-mats{ margin-top:3.2rem; }
+.more-mats h3{ margin-bottom:1.2rem; }
+.mat-row{ display:grid; grid-template-columns:11rem 1fr; gap:1.5rem; padding:1.1rem 0;
+border-top:1px solid var(--line); align-items:baseline; }
+.mat-row:last-of-type{ border-bottom:1px solid var(--line); }
+@media (max-width:640px){ .mat-row{ grid-template-columns:1fr; gap:.2rem; } }
+.mat-row b{ font-weight:600; }
+.mat-row span{ color:var(--ink-soft); font-size:.96rem; }
+
+/* ---------- trabajos ---------- */
+.case{ display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; padding:3.2rem 0; border-top:1px solid var(--line); }
+.case:first-of-type{ border-top:2px solid var(--ink); }
+@media (max-width:820px){ .case{ grid-template-columns:1fr; gap:1.6rem; padding:2.4rem 0; } }
+.case figure{ margin:0; }
+.case img{ display:block; width:100%; aspect-ratio:1/1; object-fit:cover; background:#EDEEF0; }
+.case.flip .txt{ order:-1; }
+@media (max-width:820px){ .case.flip .txt{ order:0; } }
+.kicker{ display:block; font-size:.82rem; letter-spacing:.09em; text-transform:uppercase;
+color:var(--accent-ink); font-weight:600; margin-bottom:.7rem; }
+.case h3{ font-size:clamp(1.4rem,2.6vw,1.9rem); font-weight:800; font-family:"Bricolage Grotesque",sans-serif; }
+.case p{ color:var(--ink-soft); margin-top:.9rem; }
+.case .tags{ display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.3rem; }
+.case .tags span{ font-size:.82rem; color:var(--ink-soft); border:1px solid var(--line); padding:.3rem .65rem; }
+
+.gal-head{ margin:3.6rem 0 1.6rem; }
+.gallery{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.6rem; }
+@media (max-width:820px){ .gallery{ grid-template-columns:1fr 1fr; gap:1.2rem; } }
+@media (max-width:520px){ .gallery{ grid-template-columns:1fr; } }
+.gallery figure{ margin:0; }
+.gallery img{ display:block; width:100%; aspect-ratio:1/1; object-fit:cover; background:#EDEEF0; }
+.gallery figcaption{ margin-top:.8rem; color:var(--ink-soft); font-size:.94rem; }
+.gallery figcaption b{ display:block; color:var(--ink); font-weight:600; margin-bottom:.15rem; }
+
+dl.spec{ display:grid; grid-template-columns:14rem 1fr; margin:0; border-top:1px solid var(--line); }
+@media (max-width:640px){ dl.spec{ grid-template-columns:1fr; } }
+dl.spec dt{ padding:1rem 1rem 1rem 0; border-bottom:1px solid var(--line); color:var(--ink-soft); font-size:.92rem; }
+dl.spec dd{ margin:0; padding:1rem 0; border-bottom:1px solid var(--line); font-weight:500; }
+@media (max-width:640px){ dl.spec dt{ border-bottom:0; padding-bottom:0; } dl.spec dd{ padding-top:.2rem; } }
+
+.price{ background:var(--surface); }
+.price-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:0 3rem; }
+@media (max-width:760px){ .price-grid{ grid-template-columns:1fr; } }
+.factor{ padding:1.5rem 0; border-top:1px solid var(--line); }
+.factor p{ margin:.4rem 0 0; color:var(--ink-soft); font-size:.96rem; }
+
+details{ border-bottom:1px solid var(--line); }
+details:first-of-type{ border-top:1px solid var(--line); }
+summary{ cursor:pointer; list-style:none; padding:1.25rem 2.5rem 1.25rem 0; position:relative;
+font-weight:600; font-size:1.05rem; }
+summary::-webkit-details-marker{ display:none; }
+summary::after{ content:""; position:absolute; right:.4rem; top:1.6rem; width:11px; height:11px;
+border-right:2px solid var(--accent); border-bottom:2px solid var(--accent);
+transform:rotate(45deg); transition:transform .18s ease; }
+details[open] summary::after{ transform:rotate(-135deg); }
+details .body{ padding:0 0 1.4rem; }
+details .body p{ margin:0; color:var(--ink-soft); }
+@media (prefers-reduced-motion: reduce){ summary::after{ transition:none; } }
+
+.contact{ background:var(--deep); color:var(--on-deep); border-bottom:0; }
+.contact h2{ max-width:18ch; }
+.contact p{ color:var(--on-deep-soft); }
+.contact-in{ display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:start; }
+@media (max-width:860px){ .contact-in{ grid-template-columns:1fr; gap:2.2rem; } }
+.contact-form{ margin-top:2.2rem; display:flex; flex-direction:column; gap:1rem; max-width:32rem; }
+.contact-form label{ display:flex; flex-direction:column; gap:.4rem; font-size:.92rem; color:var(--on-deep-soft); }
+.contact-form input[type="text"], .contact-form textarea{
+font:inherit; font-size:.98rem; color:var(--on-deep); background:color-mix(in srgb, var(--on-deep) 6%, transparent);
+border:1px solid var(--deep-line); border-radius:2px; padding:.7rem .8rem; resize:vertical; }
+.contact-form input[type="text"]:focus, .contact-form textarea:focus{ outline:2px solid var(--brand); outline-offset:1px; }
+.contact-form button{ align-self:flex-start; cursor:pointer; font:inherit; }
+.form-note{ margin:0; color:var(--brand); font-weight:600; font-size:.95rem; }
+.ways{ border-top:1px solid var(--deep-line); }
+.way{ display:flex; justify-content:space-between; gap:1rem; align-items:center;
+padding:1.15rem 0; border-bottom:1px solid var(--deep-line); text-decoration:none; }
+.way span.k{ color:var(--on-deep-soft); font-size:.92rem; }
+.way span.v{ font-weight:600; }
+a.way:hover span.v{ color:var(--brand); }
+
+.contact-form select,
+.contact-form input[type="file"]{
+font:inherit; font-size:.98rem; color:var(--on-deep); background:color-mix(in srgb, var(--on-deep) 6%, transparent);
+border:1px solid var(--deep-line); border-radius:2px; padding:.7rem .8rem; }
+.contact-form select:focus{ outline:2px solid var(--brand); outline-offset:1px; }
+.contact-form input[type="file"]{ padding:.55rem .6rem; font-size:.88rem; }
+.contact-form .field-hint{ font-size:.82rem; color:var(--on-deep-soft); font-weight:400; }
+.contact-form .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+@media (max-width:480px){ .contact-form .two-col{ grid-template-columns:1fr; } }
+
+.wa-float{ position:fixed; right:1.1rem; bottom:calc(1.1rem + env(safe-area-inset-bottom, 0px));
+z-index:60; display:flex; align-items:center; justify-content:center;
+width:58px; height:58px; border-radius:50%; background:#25D366; color:#fff;
+box-shadow:0 6px 20px rgba(0,0,0,.28); text-decoration:none; }
+.wa-float:hover{ filter:brightness(1.05); }
+.wa-float svg{ width:30px; height:30px; display:block; }
+@media (max-width:640px){ .wa-float{ width:52px; height:52px; right:.9rem; bottom:calc(.9rem + env(safe-area-inset-bottom, 0px)); } .wa-float svg{ width:27px; height:27px; } }
+
+footer{ background:var(--deep); color:var(--on-deep-soft); padding:2.4rem 0 3rem; font-size:.9rem; }
+.foot-in{ display:flex; flex-wrap:wrap; gap:1.2rem; align-items:center; justify-content:space-between;
+border-top:1px solid var(--deep-line); padding-top:1.8rem; }
+.foot-mark{ display:flex; align-items:center; gap:.6rem; color:var(--on-deep); }
+.foot-mark img{ height:26px; width:auto; display:block; }
+.foot-mark .word{ display:block; width:86px; height:12px; background:currentColor;
+-webkit-mask:url(/images/logo-word-mask.png) no-repeat center/contain;
+mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
+</style>
+</head>
+<body>
+
+<header class="bar">
+<div class="wrap bar-in">
+<a class="mark" href="#top" aria-label="Rush — inicio">
+<img class="bolt" src="/images/logo-bolt.png" alt="">
+<span class="word" role="img" aria-label="Rush"></span>
+</a>
+<nav class="links" aria-label="Secciones">
+<a href="#que-hacemos">Qué hacemos</a>
+<a href="#trabajos">Trabajos</a>
+<a href="#para-quien">Para quién</a>
+<a href="#proceso">Cómo trabajamos</a>
+<a href="#materiales">Materiales</a>
+<a href="#preguntas">Preguntas</a>
+</nav>
+<a class="btn" href="#contacto">Pedir presupuesto</a>
+</div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+<div class="wrap hero-in">
+<div>
+<h1>De la idea a la pieza,<br>en días.</h1>
+<p class="lead">Impresión 3D y diseño CAD en Buenos Aires. Piezas a medida, repuestos que ya no se consiguen, prototipos y series cortas. Acá está todo explicado: qué hacemos, con qué materiales y cómo cotizamos.</p>
+<div class="hero-actions">
+<a class="btn on-deep" href="#contacto">Contanos qué necesitás</a>
+<a class="btn ghost-deep" href="#trabajos">Ver trabajos</a>
+</div>
+<div class="hero-facts">
+<span>Tecnología FDM</span>
+<span>Diseño propio desde cero</span>
+<span>Envíos a todo el país</span>
+</div>
+</div>
+<div class="stage build" aria-hidden="true">
+<div class="piece"></div>
+<div class="piece-edge"></div>
+<div class="curtain"></div>
+<svg class="nozzle" viewBox="0 0 44 26" fill="none"><path d="M8 2h28v12l-11 10h-6L8 14z" fill="#B9C0C8"></path></svg>
+<div class="plate"></div>
+</div>
+</div>
+</div>
+
+<section class="stats">
+<div class="wrap stats-in">
+<div class="stat"><b>6 meses</b><span>en operación</span></div>
+<div class="stat"><b>+50 trabajos</b><span>entregados</span></div>
+<div class="stat"><b>100%</b><span>diseño y producción propia</span></div>
+</div>
+</section>
+
+<section id="que-hacemos">
+<div class="wrap">
+<div class="sec-head">
+<h2>Qué hacemos</h2>
+<p>Fabricamos objetos plásticos capa por capa, a partir de un modelo 3D. Si ya tenés el archivo, lo imprimimos. Si no lo tenés, lo diseñamos nosotros: no hace falta que sepas nada de 3D para trabajar con nosotros.</p>
+</div>
+<div class="rows">
+
+<div class="row">
+<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><path d="M3 7l9 5 9-5M12 12v10"></path></svg>
+<h3>Piezas a medida</h3>
+<p>Soportes, organizadores, adaptadores, encastres, cajas, topes. Nos contás para qué es y resolvemos la forma.</p>
+</div>
+
+<div class="row">
+<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3.2"></circle><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"></path></svg>
+<h3>Repuestos discontinuados</h3>
+<p>Esa traba, esa perilla o ese engranaje que ya no fabrica nadie. Con la pieza rota en la mano o una foto con medidas alcanza para empezar.</p>
+</div>
+
+<div class="row">
+<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V8l8-5 8 5v12"></path><path d="M9 20v-6h6v6"></path></svg>
+<h3>Prototipos</h3>
+<p>Antes de mandar a fabricar en serie, tenés la pieza en la mano para probar encastres, tamaño y ergonomía. Se corrige y se vuelve a imprimir.</p>
+</div>
+
+<div class="row">
+<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="7" height="7"></rect><rect x="14" y="4" width="7" height="7"></rect><rect x="3" y="13" width="7" height="7"></rect><rect x="14" y="13" width="7" height="7"></rect></svg>
+<h3>Producción por cantidad</h3>
+<p>Desde decenas hasta cientos de unidades iguales, con precio por cantidad y entregas parciales si las necesitás.</p>
+</div>
+
+<div class="row">
+<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17.5 11 4l3.5 6.5"></path><path d="m13 20 7-12 1.5 12z"></path><path d="M2.5 20h9"></path></svg>
+<h3>Cosplay y utilería</h3>
+<p>Broches, apliques, accesorios y piezas de armado. Te la entregamos en el color del material elegido, lista para usar o para que la pintes vos.</p>
+</div>
+
+<div class="row">
+<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>
+<h3>Diseño CAD</h3>
+<p>Modelamos desde un boceto, una foto o una idea hablada. El archivo queda hecho a tu medida y listo para reimprimir cuando quieras.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="trabajos">
+<div class="wrap">
+<div class="sec-head">
+<h2>Trabajos</h2>
+<p>Algunas piezas que salieron de la impresora. Todas diseñadas o adaptadas por nosotros, salvo donde se aclare, y entregadas tal como se ven: sin pintura ni retoques a mano.</p>
+</div>
+
+<div class="case">
+<figure><img src="/images/case-sportclub-nfc.jpg" alt="Cartel de mostrador con NFC hecho para SportClub Martínez, con el logo del club y la G de Google en relieve y a color"></figure>
+<div class="txt">
+<span class="kicker">Comercio · Señalética</span>
+<h3>Un cartel que pide reseñas sin que nadie tenga que explicarlo</h3>
+<p>SportClub Martínez quería más reseñas en Google, pero pedírselas socio por socio no escala. Diseñamos un cartel de mostrador con chip NFC adentro: el socio apoya el celular donde indica la pieza y se le abre la reseña en el teléfono, sin bajar nada ni buscar el local.</p>
+<p>El logo del club, la G de Google y las estrellas están en relieve y en color, resueltos en la impresión misma: no hay calcos, vinilos ni pintura que se despegue con el uso diario.</p>
+<div class="tags"><span>Diseño propio</span><span>NFC integrado</span><span>Multicolor</span></div>
+</div>
+</div>
+
+<div class="case flip">
+<figure><img src="/images/case-camioneta-1967.jpg" alt="Pantalla translúcida impresa en 3D montada en el marco metálico original del plafón de una camioneta de 1967"></figure>
+<div class="txt">
+<span class="kicker">Repuesto · Vehículo clásico</span>
+<h3>Una pieza de 1967 que ya no fabrica nadie</h3>
+<p>La pantalla del plafón de luz interior de una camioneta del 67 estaba rota y hace décadas que no se consigue. Con el marco metálico original en la mano tomamos las medidas y remodelamos la pantalla entera desde cero, con el relieve del centro incluido.</p>
+<p>Va impresa en material translúcido para que la luz pase parejo y encastra en el marco original sin tocar nada del vehículo. Este es el trabajo típico de restauración: la pieza no existe en ningún lado, pero existe el hueco que tiene que llenar.</p>
+<div class="tags"><span>Ingeniería inversa</span><span>Material translúcido</span><span>Pieza única</span></div>
+</div>
+</div>
+
+<div class="gal-head"><h3>Otras piezas</h3></div>
+<div class="gallery">
+<figure>
+<img src="/images/gallery-portallaves-garage.jpg" alt="Portallaves con forma de garage: al colgar la llave se levanta la persiana y aparece un auto adentro">
+<figcaption><b>Portallaves garage</b>Al colgar la llave, la persiana se levanta y aparece el auto. Mecánico, sin electrónica ni pilas.</figcaption>
+</figure>
+<figure>
+<img src="/images/gallery-maceta-dos-piezas.jpg" alt="Maceta decorativa de dos piezas con exterior nervado y maceta interior removible">
+<figcaption><b>Maceta de dos piezas</b>Exterior nervado con maceta interior removible: se riega y se cambia la planta sin mover el resto.</figcaption>
+</figure>
+<figure>
+<img src="/images/gallery-maceta-dragon.jpg" alt="Maceta con forma de dragón impresa en PLA silk color cobre, con escamas en detalle fino">
+<figcaption><b>Maceta dragón</b>Impresa en PLA silk cobre con boquilla de 0,2 mm. El brillo y las escamas salen del material, no de la pintura.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section id="instagram" class="insta">
+<div class="wrap">
+<div class="sec-head">
+<h2>Lo último en Instagram</h2>
+<p>Trabajos recientes tal como los publicamos, directo del taller.</p>
+</div>
+<div class="insta-grid">
+<a class="insta-card" href="https://www.instagram.com/p/DZiR5iUFEtP/" target="_blank" rel="noopener">
+<span class="ig-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>@rush3d.ar</span>
+<b>Lámpara NAFTA</b>
+<p>Primera integrante de la familia AROMA: diseño escalonado con LED cálida integrada. Ya disponible en la tienda.</p>
+</a>
+<a class="insta-card" href="https://www.instagram.com/p/Dc1Rt_suYL2/" target="_blank" rel="noopener">
+<span class="ig-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>@rush3d.ar</span>
+<b>Cartel con NFC para reseñas</b>
+<p>Diseñado para @znembalaje: acercás el celular y va directo a dejar la reseña en Google, conservando la estética del local.</p>
+</a>
+<a class="insta-card" href="https://www.instagram.com/p/DcRA-KKjgHh/" target="_blank" rel="noopener">
+<span class="ig-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>@rush3d.ar</span>
+<b>Soporte de pared a medida</b>
+<p>Para @sp_electricista: un soporte universal para tablet diseñado desde cero para sus proyectos de instalación.</p>
+</a>
+<a class="insta-card" href="https://www.instagram.com/p/DdA4qmPuEn6/" target="_blank" rel="noopener">
+<span class="ig-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>@rush3d.ar</span>
+<b>Cartel NFC para @brokenmobile</b>
+<p>Acerca del celular y lleva directo al WhatsApp e Instagram del local: comunicación más rápida y prolija.</p>
+</a>
+<a class="insta-card" href="https://www.instagram.com/p/DcL3W_lDsgG/" target="_blank" rel="noopener">
+<span class="ig-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>@rush3d.ar</span>
+<b>Llaveros personalizados</b>
+<p>Piezas chicas, detalladas y a pedido: también trabajamos objetos personales y regalos, no solo piezas técnicas.</p>
+</a>
+<a class="insta-card" href="https://www.instagram.com/p/DbT3EyqI-Tq/" target="_blank" rel="noopener">
+<span class="ig-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>@rush3d.ar</span>
+<b>Pulpos articulados de colores</b>
+<p>Impresos en una sola pieza, sin ensamble: un juguete divertido para los más chicos o un regalo distinto.</p>
+</a>
+</div>
+<div class="insta-cta">
+<a class="btn ghost-deep" data-ig="" href="https://instagram.com/rush3d.ar" target="_blank" style="color:var(--ink); border-color:var(--line);" rel="noopener">Ver todo en Instagram</a>
+</div>
+</div>
+</section>
+
+<section id="para-quien" class="who">
+<div class="wrap">
+<div class="sec-head">
+<h2>Para quién</h2>
+<p>El proceso es el mismo para una pieza suelta que para un pedido de quinientas. Lo que cambia es el plazo y el precio por unidad.</p>
+</div>
+<div class="who-grid">
+<div class="who-col">
+<h3>Personas</h3>
+<p>Una sola pieza también es un trabajo. No hay pedido mínimo.</p>
+<ul>
+<li>Un repuesto que no se consigue</li>
+<li>Un regalo hecho a medida</li>
+<li>Una pieza para un proyecto personal</li>
+<li>Accesorios de cosplay</li>
+</ul>
+</div>
+<div class="who-col">
+<h3>Comercios</h3>
+<p>La pieza exacta para tu local, con tus medidas, tu logo y tu color, en vez de algo genérico que casi sirve.</p>
+<ul>
+<li>Exhibidores y porta folletos</li>
+<li>Cartelería y soportes de QR</li>
+<li>Organizadores de mostrador</li>
+<li>Souvenirs con tu marca</li>
+</ul>
+</div>
+<div class="who-col">
+<h3>Empresas</h3>
+<p>Prototipado y reposición sin mínimos de fábrica ni matricería, con plazos y entregas coordinados.</p>
+<ul>
+<li>Prototipos antes de invertir en molde</li>
+<li>Repuestos de máquinas propias</li>
+<li>Dispositivos de sujeción y plantillas</li>
+<li>Producción por cantidad</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="proceso">
+<div class="wrap">
+<div class="sec-head">
+<h2>Cómo trabajamos</h2>
+<p>Cuatro pasos. Lo más largo suele ser ponernos de acuerdo en la forma de la pieza; imprimir es la parte rápida.</p>
+</div>
+<div class="steps">
+<div class="step">
+<h3>Nos escribís</h3>
+<p>Por WhatsApp o Instagram. Mandá el archivo, una foto, un dibujo o simplemente contanos el problema.</p>
+</div>
+<div class="step">
+<h3>Te pasamos el precio</h3>
+<p>Con material, cantidad y plazo cerrados. Si hay que diseñar, el diseño se cobra aparte y te lo decimos de entrada.</p>
+</div>
+<div class="step">
+<h3>Probamos una</h3>
+<p>En piezas nuevas imprimimos una primero. Si algo no encaja, se ajusta antes de hacer el resto.</p>
+</div>
+<div class="step">
+<h3>Producimos y entregamos</h3>
+<p>Retiro a coordinar en zona norte del GBA o envío por correo a todo el país.</p>
+</div>
+</div>
+<div class="note">
+<p><strong>Qué nos sirve que mandes.</strong> Cualquiera de estas cosas alcanza para arrancar: el archivo 3D (STL, STEP o 3MF), una foto de la pieza original al lado de una regla o un calibre, un dibujo a mano con medidas, o el link de algo parecido a lo que querés. Si no tenés nada de eso, contanos qué problema querés resolver y lo pensamos juntos.</p>
+</div>
+</div>
+</section>
+
+<section id="materiales">
+<div class="wrap">
+<div class="sec-head">
+<h2>Materiales</h2>
+<p>Trabajamos con los plásticos que cubren la enorme mayoría de los trabajos, desde uso general hasta piezas que tienen que aguantar calor, golpes o intemperie. La elección no es de calidad sino de uso: dónde va a estar la pieza y qué esfuerzo va a soportar. Si no sabés cuál te conviene, lo definimos nosotros con dos preguntas.</p>
+</div>
+<div class="mats">
+
+<div class="mat">
+<h3>PLA</h3>
+<p class="sub">La opción por defecto para piezas de interior</p>
+<dl>
+<dt>Rigidez</dt><dd>Alta, pero quebradizo ante golpes fuertes</dd>
+<dt>Calor</dt><dd>Se deforma cerca de los 60&nbsp;°C. No dejar dentro de un auto al sol</dd>
+<dt>Aspecto</dt><dd>El más prolijo y el que mejor toma el detalle fino</dd>
+<dt>Ideal para</dt><dd>Exhibidores, decoración, figuras, prototipos de forma</dd>
+</dl>
+</div>
+
+<div class="mat">
+<h3>PETG</h3>
+<p class="sub">Cuando la pieza tiene que trabajar</p>
+<dl>
+<dt>Rigidez</dt><dd>Algo más flexible, aguanta mejor los golpes</dd>
+<dt>Calor</dt><dd>Resiste bastante más que el PLA y tolera humedad y exterior</dd>
+<dt>Aspecto</dt><dd>Muy bueno, con brillo apenas mayor</dd>
+<dt>Ideal para</dt><dd>Soportes, piezas funcionales, repuestos, uso a la intemperie</dd>
+</dl>
+</div>
+
+</div>
+
+<div class="more-mats">
+<h3>Materiales técnicos</h3>
+<div class="mat-row"><b>TPU (flexible)</b><span>Gomoso y elástico. Fundas, topes, juntas, tacos antivibración, piezas que tienen que doblarse sin romperse.</span></div>
+<div class="mat-row"><b>ABS y ASA</b><span>Resisten temperatura y golpes. El ASA además aguanta el sol sin amarillear, así que es la opción para piezas que viven a la intemperie.</span></div>
+<div class="mat-row"><b>PLA especiales</b><span>Mate, seda, translúcido o con brillo, cuando lo que manda es cómo se ve la pieza.</span></div>
+<div class="mat-row"><b>Otros técnicos</b><span>Policarbonato, nylon y similares los evaluamos caso por caso según la geometría de la pieza. Contanos qué necesitás y te decimos con franqueza si conviene imprimirla o si te sirve más otro camino.</span></div>
+</div>
+
+<div class="note">
+<p><strong>Cómo lo entregamos.</strong> La pieza sale tal cual la produce la impresora, en el color del material elegido: no hacemos pintado ni acabados a mano. Manejamos varios colores en stock y conseguimos otros bajo pedido, con un plazo extra. Consultanos disponibilidad antes de cerrar un color.</p>
+</div>
+</div>
+</section>
+
+<section id="ficha">
+<div class="wrap">
+<div class="sec-head">
+<h2>Ficha técnica</h2>
+<p>Si ya sabés lo que estás buscando, estos son los números. Si no, no hace falta que los entiendas: contanos qué necesitás y lo resolvemos nosotros.</p>
+</div>
+<dl class="spec">
+<dt>Tecnología</dt><dd>FDM (filamento fundido)</dd>
+<dt>Equipo</dt><dd>Bambu Lab P1S, de cámara cerrada</dd>
+<dt>Boquillas</dt><dd>0,4 mm estándar y 0,2 mm para detalle fino</dd>
+<dt>Volumen máximo</dt><dd>256 × 228 × 250 mm por pieza</dd>
+<dt>Piezas más grandes</dt><dd>Se dividen en partes y se unen, con la unión pensada en el diseño</dd>
+<dt>Materiales</dt><dd>PLA, PETG, TPU, ABS y ASA. Otros, a consultar</dd>
+<dt>Archivos</dt><dd>STL, STEP, 3MF — o un boceto, una foto o la pieza original</dd>
+<dt>Diseño</dt><dd>Modelado CAD propio, no dependemos de archivos de terceros</dd>
+<dt>Entrega</dt><dd>Retiro en zona norte del GBA o envío a todo el país</dd>
+</dl>
+</div>
+</section>
+
+<section id="precios" class="price">
+<div class="wrap">
+<div class="sec-head">
+<h2>Cómo se arma el precio</h2>
+<p>No hay una lista de precios porque no hay dos piezas iguales. Sí hay cuatro cosas que definen cuánto sale la tuya, y las podés estimar antes de escribirnos.</p>
+</div>
+<div class="price-grid">
+<div class="factor">
+<h3>El tamaño de la pieza</h3>
+<p>Cuánto plástico usa y cuántas horas de máquina se lleva. Una pieza del doble de alto no cuesta el doble: cuesta bastante más.</p>
+</div>
+<div class="factor">
+<h3>La cantidad</h3>
+<p>A más unidades, menor precio por unidad. El salto más grande se nota al pasar de unas pocas a varias decenas.</p>
+</div>
+<div class="factor">
+<h3>Si hay que diseñarla</h3>
+<p>Si traés el archivo, no hay costo de diseño. Si la modelamos nosotros, se cobra una vez y el archivo queda hecho para futuras reimpresiones.</p>
+</div>
+<div class="factor">
+<h3>El material</h3>
+<p>El PLA es el más económico. Los materiales técnicos cuestan más e imprimen más lento, así que conviene usarlos solo cuando la pieza realmente los necesita.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="preguntas">
+<div class="wrap">
+<div class="sec-head">
+<h2>Preguntas frecuentes</h2>
+</div>
+
+<details>
+<summary>No tengo ningún archivo 3D. ¿Igual me pueden ayudar?</summary>
+<div class="body"><p>Sí, es el caso más común. Diseñamos la pieza desde cero a partir de una foto, un dibujo o la pieza original. Lo único que necesitamos son medidas, aunque sean aproximadas al principio.</p></div>
+</details>
+
+<details>
+<summary>¿Hacen una sola pieza o tienen pedido mínimo?</summary>
+<div class="body"><p>Hacemos una sola pieza sin problema. No hay pedido mínimo.</p></div>
+</details>
+
+<details>
+<summary>¿Cuánto tarda?</summary>
+<div class="body"><p>Depende del tamaño y de la cantidad. Una pieza chica con el archivo ya hecho suele salir en pocos días; si hay que diseñarla o son muchas unidades, el plazo es mayor. Te damos una fecha concreta junto con el presupuesto, antes de que confirmes.</p></div>
+</details>
+
+<details>
+<summary>¿Pintan o lijan las piezas?</summary>
+<div class="body"><p>No. Entregamos la pieza tal como sale de la impresora, en el color del material elegido. Elegimos el material y la orientación para que la terminación salga lo mejor posible de fábrica, y si querés pintarla después, te la damos lista para eso.</p></div>
+</details>
+
+<details>
+<summary>¿Las piezas aguantan uso real?</summary>
+<div class="body"><p>Sí, siempre que el material sea el correcto y la pieza esté pensada para ese esfuerzo: hay materiales que resisten temperatura, golpes o intemperie. Por eso preguntamos dónde va a ir y qué tiene que soportar antes de imprimir. Si lo que necesitás excede lo que la impresión 3D puede dar, te lo decimos en vez de venderte algo que se va a romper.</p></div>
+</details>
+
+<details>
+<summary>¿Pueden copiar una pieza que ya tengo?</summary>
+<div class="body"><p>Sí. La remodelamos a partir de la pieza física o de fotos con medidas, y te queda el archivo para reimprimirla cuando la necesites.</p></div>
+</details>
+
+<details>
+<summary>Mi pieza es más grande que la impresora. ¿Hay solución?</summary>
+<div class="body"><p>Sí. Se divide en partes con encastres pensados desde el diseño y se une después. En muchos casos la división queda prácticamente invisible.</p></div>
+</details>
+
+<details>
+<summary>¿Cómo se paga?</summary>
+<div class="body"><p>Por transferencia o en efectivo. En encargos grandes pedimos una seña para arrancar y el resto se abona contra entrega.</p></div>
+</details>
+
+<details>
+<summary>¿Y si la pieza no sale bien?</summary>
+<div class="body"><p>Si el error es nuestro, de diseño o de impresión, la reimprimimos sin cargo. Por eso en piezas nuevas hacemos una primero y la revisamos juntos antes de producir el resto.</p></div>
+</details>
+
+<details>
+<summary>¿Hacen envíos al interior?</summary>
+<div class="body"><p>Sí, enviamos a todo el país por correo. El costo del envío va aparte y lo confirmamos junto con el presupuesto. En zona norte del GBA se puede coordinar retiro.</p></div>
+</details>
+
+<details>
+<summary>¿Puedo ver cómo va a quedar antes de que la impriman?</summary>
+<div class="body"><p>Sí. En piezas diseñadas por nosotros te mostramos el modelo 3D antes de imprimir, y sobre eso se corrige lo que haga falta.</p></div>
+</details>
+
+</div>
+</section>
+
+<section id="contacto" class="contact">
+<div class="wrap contact-in">
+<div>
+<h2>Contanos qué necesitás</h2>
+<p>Respondemos rápido. Si podés, mandá una foto o las medidas aproximadas: con eso ya te podemos pasar un precio.</p>
+<a class="btn on-deep" data-wa1="" href="https://wa.me/5491164131331?text=Hola!%20Quer%C3%ADa%20hacer%20una%20consulta%20por%20una%20pieza" rel="noopener">Escribir por WhatsApp</a>
+
+<form id="contacto-form" class="contact-form" action="https://formsubmit.co/contacto.rush3d@gmail.com" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="_subject" value="Nueva consulta desde rush3d.ar">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://rush3d.ar/?enviado=1#contacto">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+<label>
+<span>Nombre</span>
+<input type="text" name="nombre" required autocomplete="name">
+</label>
+<label>
+<span>Email o WhatsApp</span>
+<input type="text" name="contacto" required autocomplete="email">
+</label>
+<div class="two-col">
+<label>
+<span>¿Qué necesitás?</span>
+<select name="tipo_pedido">
+<option value="">Elegí una opción</option>
+<option value="Pieza a medida">Pieza a medida</option>
+<option value="Repuesto">Repuesto que ya no se consigue</option>
+<option value="Prototipo">Prototipo</option>
+<option value="Producción por cantidad">Producción por cantidad</option>
+<option value="Diseño CAD">Diseño CAD desde cero</option>
+<option value="No estoy seguro">No estoy seguro</option>
+</select>
+</label>
+<label>
+<span>¿Tenés el archivo 3D?</span>
+<select name="tiene_archivo">
+<option value="">Elegí una opción</option>
+<option value="Sí, lo subo abajo">Sí, lo subo abajo</option>
+<option value="No, hay que diseñarla">No, hay que diseñarla</option>
+<option value="No sé">No sé</option>
+</select>
+</label>
+</div>
+<label>
+<span>Contanos qué necesitás</span>
+<textarea name="mensaje" rows="4" required></textarea>
+</label>
+<label>
+<span>Archivo (opcional)</span>
+<input type="file" name="archivo" accept=".stl,.step,.stp,.3mf,.obj,image/*,.pdf">
+<span class="field-hint">STL, foto o PDF — hasta 5MB</span>
+</label>
+<button type="submit" class="btn">Enviar consulta</button>
+<p class="form-note" id="contacto-gracias" hidden>¡Gracias! Recibimos tu consulta y te respondemos a la brevedad.</p>
+</form>
+</div>
+<div class="ways">
+<a class="way" data-wa1="" href="https://wa.me/5491164131331?text=Hola!%20Quer%C3%ADa%20hacer%20una%20consulta%20por%20una%20pieza" rel="noopener"><span class="k">WhatsApp · Iván</span><span class="v">+54 9 11 6413-1331</span></a>
+<a class="way" data-wa2="" href="https://wa.me/5491123368067?text=Hola!%20Quer%C3%ADa%20hacer%20una%20consulta%20por%20una%20pieza" rel="noopener"><span class="k">WhatsApp · Joaquín</span><span class="v">+54 9 11 2336-8067</span></a>
+<a class="way" data-ig="" href="https://instagram.com/rush3d.ar" rel="noopener"><span class="k">Instagram</span><span class="v">@rush3d.ar</span></a>
+<a class="way" data-mail="" href="mailto:contacto.rush3d@gmail.com"><span class="k">Email</span><span class="v">contacto.rush3d@gmail.com</span></a>
+<div class="way"><span class="k">Horario</span><span class="v">Escribinos a cualquier hora</span></div>
+<div class="way"><span class="k">Dónde estamos</span><span class="v">Zona norte del GBA</span></div>
+<div class="way"><span class="k">Envíos</span><span class="v">A todo el país</span></div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap foot-in">
+<div class="foot-mark">
+<img src="/images/logo-bolt.png" alt="">
+<span class="word" role="img" aria-label="Rush"></span>
+</div>
+<div>Impresión 3D y diseño CAD — Buenos Aires, Argentina</div>
+</div>
+</footer>
+
+<script>
+const RUSH = {
+wa1: "5491164131331",
+wa2: "5491123368067",
+texto: "Hola! Quería hacer una consulta por una pieza",
+instagram: "rush3d.ar",
+email: "contacto.rush3d@gmail.com"
+};
+(function () {
+const apply = (sel, href) => document.querySelectorAll(sel).forEach(el => {
+el.setAttribute("href", href);
+if (/^https?:/.test(href)) el.setAttribute("rel", "noopener");
+});
+const wa = n => "https://wa.me/" + n + "?text=" + encodeURIComponent(RUSH.texto);
+apply("[data-wa1]", wa(RUSH.wa1));
+apply("[data-wa2]", wa(RUSH.wa2));
+apply("[data-ig]", "https://instagram.com/" + RUSH.instagram);
+apply("[data-mail]", "mailto:" + RUSH.email);
+
+if (/[?&]enviado=1/.test(location.search)) {
+const form = document.getElementById("contacto-form");
+const nota = document.getElementById("contacto-gracias");
+if (form && nota) {
+form.querySelectorAll("label, button[type=submit]").forEach(el => el.hidden = true);
+nota.hidden = false;
+}
+history.replaceState(null, "", location.pathname + "#contacto");
+}
+})();
+</script>
+<a class="wa-float" data-wa1="" href="#contacto" aria-label="Escribinos por WhatsApp" target="_blank">
+<svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.42.687 4.68 1.878 6.598L3 29l7.106-2.34a12.44 12.44 0 0 0 5.895 1.5h.005c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3zm0 22.77h-.004a10.24 10.24 0 0 1-5.223-1.43l-.375-.223-3.877 1.277 1.296-3.78-.244-.388a10.22 10.22 0 0 1-1.574-5.526c0-5.664 4.611-10.27 10.28-10.27 2.747 0 5.328 1.07 7.27 3.013a10.207 10.207 0 0 1 3.008 7.267c0 5.665-4.612 10.27-10.28 10.27h.001zm5.636-7.697c-.309-.155-1.827-.902-2.11-1.005-.283-.103-.489-.155-.695.155-.206.31-.798 1.005-.978 1.212-.18.206-.36.232-.669.077-.309-.155-1.304-.48-2.484-1.531-.918-.818-1.538-1.828-1.718-2.138-.18-.31-.019-.477.136-.63.14-.14.309-.361.464-.542.155-.18.206-.31.309-.516.103-.206.052-.387-.026-.542-.077-.155-.695-1.674-.953-2.293-.251-.602-.506-.52-.695-.53-.18-.008-.386-.01-.592-.01a1.14 1.14 0 0 0-.824.387c-.283.31-1.082 1.057-1.082 2.577s1.108 2.99 1.263 3.196c.155.206 2.181 3.33 5.284 4.67.738.319 1.314.51 1.763.652.741.235 1.415.202 1.948.123.594-.089 1.827-.747 2.084-1.469.257-.723.257-1.341.18-1.469-.077-.129-.283-.206-.592-.361z"></path></svg>
+</a>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"21ec021a967f48f7b74ebf53d17c0e7c","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
