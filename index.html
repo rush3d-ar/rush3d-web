@@ -92,6 +92,26 @@ src="https://www.facebook.com/tr?id=379032344154547&ev=PageView&noscript=1"
 }
 </script>
 
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+{"@type": "Question", "name": "No tengo ningún archivo 3D. ¿Igual me pueden ayudar?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, es el caso más común. Diseñamos la pieza desde cero a partir de una foto, un dibujo o la pieza original. Lo único que necesitamos son medidas, aunque sean aproximadas al principio."}},
+{"@type": "Question", "name": "¿Hacen una sola pieza o tienen pedido mínimo?", "acceptedAnswer": {"@type": "Answer", "text": "Hacemos una sola pieza sin problema. No hay pedido mínimo."}},
+{"@type": "Question", "name": "¿Cuánto tarda?", "acceptedAnswer": {"@type": "Answer", "text": "Depende del tamaño y de la cantidad. Una pieza chica con el archivo ya hecho suele salir en pocos días; si hay que diseñarla o son muchas unidades, el plazo es mayor. Te damos una fecha concreta junto con el presupuesto, antes de que confirmes."}},
+{"@type": "Question", "name": "¿Pintan o lijan las piezas?", "acceptedAnswer": {"@type": "Answer", "text": "No. Entregamos la pieza tal como sale de la impresora, en el color del material elegido. Elegimos el material y la orientación para que la terminación salga lo mejor posible de fábrica, y si querés pintarla después, te la damos lista para eso."}},
+{"@type": "Question", "name": "¿Las piezas aguantan uso real?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, siempre que el material sea el correcto y la pieza esté pensada para ese esfuerzo: hay materiales que resisten temperatura, golpes o intemperie. Por eso preguntamos dónde va a ir y qué tiene que soportar antes de imprimir. Si lo que necesitás excede lo que la impresión 3D puede dar, te lo decimos en vez de venderte algo que se va a romper."}},
+{"@type": "Question", "name": "¿Pueden copiar una pieza que ya tengo?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. La remodelamos a partir de la pieza física o de fotos con medidas, y te queda el archivo para reimprimirla cuando la necesites."}},
+{"@type": "Question", "name": "Mi pieza es más grande que la impresora. ¿Hay solución?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Se divide en partes con encastres pensados desde el diseño y se une después. En muchos casos la división queda prácticamente invisible."}},
+{"@type": "Question", "name": "¿Cómo se paga?", "acceptedAnswer": {"@type": "Answer", "text": "Por transferencia o en efectivo. En encargos grandes pedimos una seña para arrancar y el resto se abona contra entrega."}},
+{"@type": "Question", "name": "¿Y si la pieza no sale bien?", "acceptedAnswer": {"@type": "Answer", "text": "Si el error es nuestro, de diseño o de impresión, la reimprimimos sin cargo. Por eso en piezas nuevas hacemos una primero y la revisamos juntos antes de producir el resto."}},
+{"@type": "Question", "name": "¿Hacen envíos al interior?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, enviamos a todo el país por correo. El costo del envío va aparte y lo confirmamos junto con el presupuesto. En zona norte del GBA se puede coordinar retiro."}},
+{"@type": "Question", "name": "¿Puedo ver cómo va a quedar antes de que la impriman?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. En piezas diseñadas por nosotros te mostramos el modelo 3D antes de imprimir, y sobre eso se corrige lo que haga falta."}}
+]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -142,10 +162,8 @@ backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line); }
 .bar-in{ display:flex; align-items:center; justify-content:space-between; gap:1rem; height:72px; }
 .mark{ display:flex; align-items:center; gap:.7rem; text-decoration:none; }
 .mark .bolt{ display:block; height:34px; width:auto; }
-.mark .word{ display:block; width:112px; height:15px;
-background:currentColor;
--webkit-mask:url(/images/logo-word-mask.png) no-repeat center/contain;
-mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
+.mark .word{ display:block; font-family:"Bricolage Grotesque",Georgia,sans-serif;
+font-weight:800; font-size:1.15rem; letter-spacing:.01em; color:var(--ink); }
 nav.links{ display:flex; gap:1.5rem; font-size:.95rem; }
 nav.links a{ text-decoration:none; color:var(--ink-soft); padding-block:.4rem; }
 nav.links a:hover{ color:var(--ink); }
@@ -175,23 +193,45 @@ color:var(--ink); line-height:1.1; }
 .stat span{ display:block; margin-top:.3rem; color:var(--ink-soft); font-size:.92rem; }
 
 .stage{ position:relative; aspect-ratio:1/1; max-width:420px; margin-inline:auto; width:100%; }
-.plate{ position:absolute; left:0; right:0; bottom:14%; height:2px; background:var(--deep-line); }
+.stage::before{ content:""; position:absolute; inset:6% 2% 10%;
+background:radial-gradient(closest-side, color-mix(in srgb, var(--brand) 35%, transparent), transparent 72%);
+filter:blur(30px); opacity:.6; pointer-events:none; }
+.plate{ position:absolute; left:6%; right:6%; bottom:14%; height:2px; background:var(--deep-line); }
 .plate::after{ content:""; position:absolute; inset:0 0 auto; height:1px;
 background:linear-gradient(to right, transparent, var(--brand), transparent); opacity:.8; }
-.piece,.piece-edge{ position:absolute; left:12%; right:12%; top:16%; bottom:14%;
+.plate::before{ content:""; position:absolute; left:16%; right:16%; bottom:-1px; height:20px;
+background:radial-gradient(closest-side, color-mix(in srgb, var(--brand) 50%, transparent), transparent 78%);
+filter:blur(7px); opacity:.7; }
+.piece-group{ position:absolute; left:12%; right:12%; top:16%; bottom:14%;
+filter:drop-shadow(0 16px 22px rgba(0,0,0,.4));
+animation:idle-bob 6.5s ease-in-out 3s infinite; }
+.piece,.piece-edge{ position:absolute; inset:0;
 clip-path:polygon(22% 100%, 12% 62%, 20% 26%, 36% 4%, 64% 4%, 80% 26%, 88% 62%, 78% 100%); }
-.piece{ background:repeating-linear-gradient(to bottom, var(--brand) 0 3px, transparent 3px 6px); opacity:.95; }
-.piece-edge{ background:color-mix(in srgb, var(--steel) 20%, transparent); mix-blend-mode:screen; }
-.curtain{ position:absolute; left:0; right:0; top:0; height:0%; background:var(--deep); }
-.nozzle{ position:absolute; top:16%; left:50%; width:44px; height:26px; transform:translate(-50%,-100%); opacity:0; }
-.build .curtain{ height:86%; animation:lift 2.4s cubic-bezier(.4,0,.2,1) .35s forwards; }
-.build .nozzle{ animation:head 2.4s cubic-bezier(.4,0,.2,1) .35s forwards; }
+.piece{ background:
+repeating-linear-gradient(to bottom, rgba(0,0,0,.18) 0 2px, transparent 2px 7px),
+linear-gradient(135deg, color-mix(in srgb, var(--brand) 55%, white 25%) 0%, var(--brand) 48%, var(--accent-ink) 100%); }
+.piece-edge{ background:linear-gradient(205deg, rgba(255,255,255,.5), transparent 42%); mix-blend-mode:overlay; opacity:.85; }
+.curtain{ position:absolute; left:-2px; right:-2px; top:-2px; height:0%; background:var(--deep); }
+.curtain::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:5px;
+background:linear-gradient(to right, transparent, color-mix(in srgb, var(--brand) 75%, white 35%), transparent);
+filter:blur(1.5px); opacity:0; }
+.nozzle{ position:absolute; top:16%; left:50%; width:38px; height:26px; transform:translate(-50%,-100%); opacity:0;
+filter:drop-shadow(0 4px 7px rgba(0,0,0,.55)); }
+.build .curtain{ height:86%; animation:lift 3.1s cubic-bezier(.65,0,.35,1) .35s forwards; }
+.build .curtain::after{ animation:glowline 3.1s cubic-bezier(.65,0,.35,1) .35s forwards; }
+.build .nozzle{ animation:head 3.1s cubic-bezier(.65,0,.35,1) .35s forwards; }
 @keyframes lift{ to{ height:0%; } }
+@keyframes glowline{ 0%{ opacity:0; } 6%{ opacity:1; } 94%{ opacity:1; } 100%{ opacity:0; } }
 @keyframes head{
-0%{ opacity:0; top:86%; left:30%; } 8%{ opacity:1; } 25%{ left:72%; }
-50%{ left:26%; } 75%{ left:70%; } 92%{ opacity:1; } 100%{ opacity:0; top:14%; left:50%; } }
+0%{ opacity:0; top:86%; left:30%; } 6%{ opacity:1; }
+17%{ left:72%; } 29%{ left:26%; } 41%{ left:70%; } 53%{ left:28%; } 65%{ left:68%; } 77%{ left:30%; }
+92%{ opacity:1; } 100%{ opacity:0; top:14%; left:50%; } }
+@keyframes idle-bob{
+0%,100%{ transform:translateY(0) rotate(0deg); }
+50%{ transform:translateY(-5px) rotate(.5deg); } }
 @media (prefers-reduced-motion: reduce){
-.build .curtain{ animation:none; height:0%; } .build .nozzle{ animation:none; opacity:0; } }
+.build .curtain{ animation:none; height:0%; } .build .nozzle{ animation:none; opacity:0; }
+.piece-group{ animation:none; } .stage::before{ display:none; } }
 
 section{ padding:5.5rem 0; border-bottom:1px solid var(--line); }
 @media (max-width:640px){ section{ padding:3.5rem 0; } }
@@ -358,9 +398,8 @@ footer{ background:var(--deep); color:var(--on-deep-soft); padding:2.4rem 0 3rem
 border-top:1px solid var(--deep-line); padding-top:1.8rem; }
 .foot-mark{ display:flex; align-items:center; gap:.6rem; color:var(--on-deep); }
 .foot-mark img{ height:26px; width:auto; display:block; }
-.foot-mark .word{ display:block; width:86px; height:12px; background:currentColor;
--webkit-mask:url(/images/logo-word-mask.png) no-repeat center/contain;
-mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
+.foot-mark .word{ display:block; font-family:"Bricolage Grotesque",Georgia,sans-serif;
+font-weight:800; font-size:.95rem; letter-spacing:.01em; }
 </style>
 </head>
 <body>
@@ -369,7 +408,7 @@ mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
 <div class="wrap bar-in">
 <a class="mark" href="#top" aria-label="Rush — inicio">
 <img class="bolt" src="/images/logo-bolt.png" alt="">
-<span class="word" role="img" aria-label="Rush"></span>
+<span class="word">RUSH</span>
 </a>
 <nav class="links" aria-label="Secciones">
 <a href="#que-hacemos">Qué hacemos</a>
@@ -401,10 +440,15 @@ mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
 </div>
 </div>
 <div class="stage build" aria-hidden="true">
+<div class="piece-group">
 <div class="piece"></div>
 <div class="piece-edge"></div>
+</div>
 <div class="curtain"></div>
-<svg class="nozzle" viewBox="0 0 44 26" fill="none"><path d="M8 2h28v12l-11 10h-6L8 14z" fill="#B9C0C8"></path></svg>
+<svg class="nozzle" viewBox="0 0 38 26" fill="none">
+<path d="M6 2h26v11l-10 9h-6L6 13z" fill="#B9C0C8"></path>
+<circle cx="19" cy="20" r="3" fill="#FF6A5E"></circle>
+</svg>
 <div class="plate"></div>
 </div>
 </div>
@@ -474,7 +518,7 @@ mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
 </div>
 
 <div class="case">
-<figure><img src="/images/case-sportclub-nfc.jpg" alt="Cartel de mostrador con NFC hecho para SportClub Martínez, con el logo del club y la G de Google en relieve y a color"></figure>
+<figure><img src="/images/case-sportclub-nfc.jpg" loading="lazy" alt="Cartel de mostrador con NFC hecho para SportClub Martínez, con el logo del club y la G de Google en relieve y a color"></figure>
 <div class="txt">
 <span class="kicker">Comercio · Señalética</span>
 <h3>Un cartel que pide reseñas sin que nadie tenga que explicarlo</h3>
@@ -485,7 +529,7 @@ mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
 </div>
 
 <div class="case flip">
-<figure><img src="/images/case-camioneta-1967.jpg" alt="Pantalla translúcida impresa en 3D montada en el marco metálico original del plafón de una camioneta de 1967"></figure>
+<figure><img src="/images/case-camioneta-1967.jpg" loading="lazy" alt="Pantalla translúcida impresa en 3D montada en el marco metálico original del plafón de una camioneta de 1967"></figure>
 <div class="txt">
 <span class="kicker">Repuesto · Vehículo clásico</span>
 <h3>Una pieza de 1967 que ya no fabrica nadie</h3>
@@ -498,15 +542,15 @@ mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
 <div class="gal-head"><h3>Otras piezas</h3></div>
 <div class="gallery">
 <figure>
-<img src="/images/gallery-portallaves-garage.jpg" alt="Portallaves con forma de garage: al colgar la llave se levanta la persiana y aparece un auto adentro">
+<img src="/images/gallery-portallaves-garage.jpg" loading="lazy" alt="Portallaves con forma de garage: al colgar la llave se levanta la persiana y aparece un auto adentro">
 <figcaption><b>Portallaves garage</b>Al colgar la llave, la persiana se levanta y aparece el auto. Mecánico, sin electrónica ni pilas.</figcaption>
 </figure>
 <figure>
-<img src="/images/gallery-maceta-dos-piezas.jpg" alt="Maceta decorativa de dos piezas con exterior nervado y maceta interior removible">
+<img src="/images/gallery-maceta-dos-piezas.jpg" loading="lazy" alt="Maceta decorativa de dos piezas con exterior nervado y maceta interior removible">
 <figcaption><b>Maceta de dos piezas</b>Exterior nervado con maceta interior removible: se riega y se cambia la planta sin mover el resto.</figcaption>
 </figure>
 <figure>
-<img src="/images/gallery-maceta-dragon.jpg" alt="Maceta con forma de dragón impresa en PLA silk color cobre, con escamas en detalle fino">
+<img src="/images/gallery-maceta-dragon.jpg" loading="lazy" alt="Maceta con forma de dragón impresa en PLA silk color cobre, con escamas en detalle fino">
 <figcaption><b>Maceta dragón</b>Impresa en PLA silk cobre con boquilla de 0,2 mm. El brillo y las escamas salen del material, no de la pintura.</figcaption>
 </figure>
 </div>
@@ -860,7 +904,7 @@ mask:url(/images/logo-word-mask.png) no-repeat center/contain; }
 <div class="wrap foot-in">
 <div class="foot-mark">
 <img src="/images/logo-bolt.png" alt="">
-<span class="word" role="img" aria-label="Rush"></span>
+<span class="word">RUSH</span>
 </div>
 <div>Impresión 3D y diseño CAD — Buenos Aires, Argentina</div>
 </div>
