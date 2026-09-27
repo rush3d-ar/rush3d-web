@@ -9,3 +9,5 @@ not_found_handling = "404-page"
 enabled = true
 invocation_logs = true
 persist = true
+
+[previews]
