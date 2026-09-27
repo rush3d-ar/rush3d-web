@@ -7,6 +7,8 @@ Cloudflare Worker con **Static Assets** (no Pages).
 
 - `index.html` — página completa (HTML + CSS + JS inline, como en producción).
 - `images/` — imágenes referenciadas por el HTML.
+- `tienda/` — tienda RUSH Originals (catálogo, ficha de la Lámpara NAFTA y botón de arrepentimiento). Se genera desde `src/` (ver `src/README.md`).
+- `models/` — modelos 3D de los productos.
 - `wrangler.toml` — configuración para desplegar con Wrangler / Cloudflare Builds.
 
 ## Cómo desplegar
@@ -21,6 +23,7 @@ npx wrangler deploy
 
 ## Notas técnicas
 
+- Los pedidos de la tienda y el botón de arrepentimiento también usan FormSubmit (endpoint AJAX), con respuesta automática al cliente.
 - El formulario de contacto usa [FormSubmit](https://formsubmit.co/) apuntando
   a `contacto.rush3d@gmail.com` (sin backend propio).
 - Analytics y tracking instalados en `index.html`: Cloudflare Web Analytics,

@@ -1,0 +1,12 @@
+{
+  "name": "rush3d-web-src",
+  "private": true,
+  "description": "Código fuente de los scripts de rush3d.ar. Se compila a /assets.",
+  "scripts": {
+    "build": "esbuild nafta.js --bundle --minify --format=esm --target=es2020 --outfile=dist/nafta.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "three": "0.169.0"
+  }
+}
